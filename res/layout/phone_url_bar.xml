@@ -56,7 +56,7 @@
                 android:singleLine="true"
                 android:text=""
                 android:textAppearance="?android:attr/textAppearanceMedium" />
-            <!-- 
+            <!--
             <TextView
                 android:id="@+id/UrlBarSubTitle"
                 android:layout_width="match_parent"
@@ -65,7 +65,8 @@
                 android:ellipsize="end"
                 android:singleLine="true"
                 android:text=""
-                android:textAppearance="?android:attr/textAppearanceSmall" /> -->
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+            -->
         </LinearLayout>
 
         <LinearLayout
@@ -75,16 +76,18 @@
             android:layout_alignParentLeft="true"
             android:layout_centerInParent="true"
             android:layout_toLeftOf="@+id/UrlBarGoStopReload"
-            android:visibility="invisible"
-            android:orientation="horizontal" >
+            android:orientation="horizontal"
+            android:visibility="invisible" >
 
             <AutoCompleteTextView
                 android:id="@+id/UrlBarUrlEdit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/UrlBarUrlHint"
+                android:imeOptions="actionGo"
                 android:inputType="textUri"
-                android:selectAllOnFocus="true" >
+                android:selectAllOnFocus="true"
+                android:textColorHint="@color/white" >
             </AutoCompleteTextView>
         </LinearLayout>
 
@@ -92,8 +95,8 @@
             android:id="@+id/UrlBarGoStopReload"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
             android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
             android:layout_centerVertical="true"
             android:layout_toLeftOf="@+id/MenuButton"
             android:background="@drawable/btn_item"
@@ -107,10 +110,10 @@
             android:id="@+id/MenuButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
             android:layout_alignParentBottom="true"
-            android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
             android:background="@drawable/btn_item"
             android:contentDescription="@string/ContentDescriptionMenuButton"
             android:focusable="true"
